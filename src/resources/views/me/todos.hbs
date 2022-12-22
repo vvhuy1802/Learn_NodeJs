@@ -1,0 +1,18 @@
+<div class="mt-4">
+    <div>
+        <h3>Task todo</h3>
+    </div>
+    <div class="col-lg-9">
+        <div class="list-group">
+            {{#each todos}}
+            <a href="/me/todos/{{this.slug}}"
+                class="list-group-item list-group-item-action list-group-item-{{this.color}}">
+                <div>
+                    <h5 class="mb-1">{{this.name}}</h5>
+                    <small id="date">{{this.createdAt}}</small>
+                </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+</div>
